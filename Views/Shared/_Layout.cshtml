@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Quizenligne</title>
     <script type="importmap"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Quizenligne.styles.css" asp-append-version="true" />
@@ -46,5 +47,23 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <div class="bottom-nav">
+        <a href="/Classement" class="nav-item">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>Classement</span>
+        </a>
+
+        <a href="/Home/Index" class="nav-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Accueil</span>
+        </a>
+
+        <a href="/Profil" class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            <span>Profil</span>
+        </a>
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,62 @@
+.hero-container {
+    background: linear-gradient(135deg, #a54bff, #6a3cf6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    color: white;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.hero-desc {
+    font-size: 1.2rem;
+    margin: 20px 0 40px;
+    color: #f3f3f3;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #007bff;
+    padding: 15px 35px;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #0056cc;
+    transform: scale(1.05);
+}
+
+.hero-container::before {
+    content: "QUIZ";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.15);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
